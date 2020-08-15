@@ -1,0 +1,124 @@
+/* General */
+*, *::before, *::after {
+  	box-sizing: border-box;
+}
+
+body {
+  	margin: 0;
+  	font-size: 15px;
+  	line-height: 1.2;
+  	font-family: "Raleway", sans-serif;
+}
+
+h1
+{
+	font-size: 70px;
+  	line-height: 0.8;
+  	font-family: "Vollkorn", sans-serif;
+  	letter-spacing: 0.07em;
+  	text-align: center;
+}
+
+h3
+
+{
+	font-size: 35px;
+  	line-height: 1.1;
+  	font-family: "Vollkorn", sans-serif;
+  	letter-spacing: 0.07em;
+  	text-align: center;
+}
+
+.container
+{
+	display: flex;
+	justify-content: center;
+	margin: 48px 0;
+}
+
+/* Header */
+
+header
+{
+  	height: 500px;
+  	width: 100%;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	background-image: url(https://i.postimg.cc/L8pQQTXH/pexels-bryan-geraldo-586415.jpg);
+}
+
+header .container
+{
+	height: 100%;
+}
+
+header .page-title
+{
+	color: white;
+	align-self: center;
+}
+
+header h1, header h3
+{
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+header .link
+{
+	width: 3rem;
+	margin: 0 50%;
+	transform: translateX(-50%);
+}
+
+header i
+{
+	font-size: 3em;
+	color: red;
+}
+
+/* Lyrics */
+
+.lyrics
+{
+	position: relative;
+}
+
+.lyrics::before 
+{
+  position: absolute;
+  content: "";
+  top: -12px;
+  left: 50%;
+  width: 50px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: grey;
+  margin-bottom: 12px;
+}
+
+.lyrics::after 
+{
+  position: absolute;
+  content: "";
+  bottom: -24px;
+  left: 50%;
+  width: 50px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: grey;
+  margin-bottom: 12px;
+}
+
+.lyrics-elements
+{
+	max-width: 300px;
+}
+
+/* Footer */
+
+.footer-elements
+{
+	max-width: 300px;
+	color: #6c757d;
+}
